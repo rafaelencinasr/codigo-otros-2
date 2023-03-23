@@ -1,0 +1,27 @@
+Errores:
+-html
+    - cambiar por elementos tipo labels
+    - elementos br utilizados de forma incorrecta
+    - al boton input type submit, le hace falta el atributo de value para cambiar
+      el texto que se muestra sobre el boton
+    - div padre donde aparece <h2>Lista de invitados</h2> le falta un id para ser
+      ubicado durante la manipulacion del DOM
+    - la src del script se hace desde una carpeta interior, corregir por carpeta actual
+
+  Para resolverlo se agregaron elementos labels, se corrigio el uso de los <br>, se agrego
+  el atributo de value con una descripcion apropiada al input submit, se agrego un id al div
+  donde se mostraria la lista de invitados, y se corrigio la direccion del script. 
+
+-script
+    - uso de variables var puede traer problemas
+    - Muchas reasignaciones de variables
+    - Funciones declaradas dentro de otras funciones pueden volver el codigo muy dificil de
+      comprender
+    - Muchos bloques de codigo repetidos
+    - Falta de documentacion
+
+
+  Para solucionarlo se refactorizo una gran parte del codigo (donde se creaban elementos y
+  se agregaban con append) por un "elemento.innerHTML += el-codigo-que-queramos-agregar"
+  De igual forma, se agregaron comentarios para documentar las diferentes funciones del
+  codigo, y se

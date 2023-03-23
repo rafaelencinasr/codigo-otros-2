@@ -1,0 +1,55 @@
+<!-- 
+
+Este programa toma los valores ingresados por el usuario en el formulario,
+y los agrega a una lista de invitados (si se cumplen los requerimientos de
+tener un nombre y una edad minima de 18 y maxima de 120 años).
+
+Tambien se crea un boton por cada invitado que permite eliminarlos de la lista
+en caso de ser necesario
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario fixed</title>
+</head>
+<body>
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form id="formulario" class="formulario">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="age">Edad</label>
+    <input type="number" name="age" id="age">
+    <br>
+
+    <label for="nationality">Nacionalidad</label>
+    <select name="nationality" id="nationality">
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br>
+    <input type="submit" value="Agregar invitado a la lista" id="botonAgregarInvitado">
+  </form>
+
+  <div id="listaDeInvitados">
+    <h2>Lista de invitados</h2>
+    
+  </div>
+
+
+  <script src="./formulario.js" defer></script>
+</body>
+
+</html>
